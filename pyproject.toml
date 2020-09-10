@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "ucb-api"
+version = "0.1.0"
+description = "Python package for Unity Cloud Build api"
+authors = ["leynier <leynier41@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+ucb-api = "ucb_api.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+typer = {extras = ["all"], version = "^0.3.2"}
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
