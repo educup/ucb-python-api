@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ucb-api"
-version = "0.1.0"
+version = "0.1.1"
 description = "Python package for Unity Cloud Build api"
 authors = ["leynier <leynier41@gmail.com>"]
 readme = "README.md"

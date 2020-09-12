@@ -60,6 +60,5 @@ def set_envvar_buildtarget(buildtargetslist: List[InlineBuildTarget], vars: dict
             envvar.update(vars)
             response = api_instance.set_env_variables_for_build_target(org_id, project_id, item.buildtargetid, envvar)
             typer.echo(f'{item.buildtargetid}: {response}')
-            break
     except ApiException as e:
         print("Exception: %s\n" % e)
